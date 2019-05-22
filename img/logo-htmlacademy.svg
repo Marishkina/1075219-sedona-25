@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="83" height="10" viewBox="0 0 83 10">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 14px;
+        fill: #fff;
+        text-anchor: middle;
+        font-family: "PT Sans Narrow";
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+    </style>
+  </defs>
+  <text id="html_academy" data-name="html academy" class="cls-1" x="40.898" y="10.464"><tspan x="40.898">html academy</tspan></text>
+</svg>
