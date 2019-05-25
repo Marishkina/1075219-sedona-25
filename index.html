@@ -7,14 +7,14 @@
    <body>
      <header class="main-header">
        <nav class="main-navigation">
-         <a class="main-navigation-logo">
+         <p class="main-navigation-logo">
            <img src="img/logo.svg" width="140" height="72" alt="Логотип Sedona">
-         </a>
+         </p>
          <ul class="site-navigation">
-           <li><a href="#">Информация<a></li>
-           <li><a href="#">Фото и видео<a></li>
-           <li><a href="#">Карта штата<a></li>
-           <li><a href="inner.html">Гостиницы<a></li>
+           <li><a href="#">Информация</a></li>
+           <li><a href="#">Фото и видео</a></li>
+           <li><a href="#">Карта штата</a></li>
+           <li><a href="inner.html">Гостиницы</a></li>
          </ul>
        </nav>
      </header>
@@ -37,7 +37,9 @@
            </li>
 
            <li>
-             <a href="#"><img src="img/photo-1.jpg" width="800" height="401" alt="Фотография города"></a>
+             <a href="#">
+               <img src="img/photo-1.jpg" width="800" height="256" alt="Фотография города">
+             </a>
            </li>
 
            <li>
@@ -56,7 +58,9 @@
            </li>
 
            <li>
-               <a href="#"><img src="img/photo-2.jpg" width="800" height="400" alt="Фотография моста"></a>
+               <a href="#">
+                 <img src="img/photo-2.jpg" width="800" height="256" alt="Фотография моста">
+               </a>
            </li>
 
            <li>
@@ -90,10 +94,23 @@
 
        <section class="search-form">
          <b>Заинтересовались<b>
-         <span>Укажите предполагаемые даты поездки, и мы покажем лучшие предложения гостиниц в Седоне</span>
-
-           <!-- Здесь будет форма поиска отеля и подключенная карта -->
-
+         <p>Укажите предполагаемые даты поездки, и мы покажем лучшие предложения гостиниц в Седоне</p>
+         <h2>Поиск гостиницы в Седоне</h2>
+         <form action="https://echo.sedona.ru" method="get">
+          <label>Дата заезда:
+           <input type="date" name="arrival date" placeholder="24 апреля 2017">
+          </label>
+          <label>Дата выезда:
+           <input type="date" name="departure date" placeholder="4 июля 2017">
+          </label>
+          <label>Взрослые:
+           <input class="half-width" type="number" name="adult" placeholder="2">
+          </label>
+          <label>Дети:
+           <input class="half-width" type="number" name="children" placeholder="0">
+          </label>
+          <input type="submit" value="найти">
+         </form>
        </section>
      </main>
 
@@ -102,9 +119,9 @@
 
        <div class="footer-social">
          <ul>
-           <li><a class="social-button" href="#">Вконтакте</li>
-           <li><a class="social-button" href="#">Фейсбук</li>
-           <li><a class="social-button" href="#">Инстаграм</li>
+           <li><a class="social-button" href="#" aria-label="Седона в Твиттере"></a></li>
+           <li><a class="social-button" href="#" aria-label="Седона на Фейсбуке"></a></li>
+           <li><a class="social-button" href="#" aria-label="Седона на Ютубе"></a></li>
          </ul>
        </div>
 
@@ -113,5 +130,5 @@
          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg"></a>
        </p>
      </footer>
-</body>
+   </body>
  </html>

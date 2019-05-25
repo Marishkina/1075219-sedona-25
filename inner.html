@@ -11,23 +11,52 @@
 	          <img src="img/logo.svg" width="140" height="72" alt="Логотип Sedona">
 	        </a>
 	        <ul class="site-navigation">
-	          <li><a href="#">Информация<a></li>
-	          <li><a href="#">Фото и видео<a></li>
-	          <li><a href="#">Карта штата<a></li>
-	          <li><a href="#">Гостиницы<a></li>
+	          <li><a href="#">Информация</a></li>
+	          <li><a href="#">Фото и видео</a></li>
+	          <li><a href="#">Карта штата</a></li>
+	          <li><a class="site-navigation-current">Гостиницы</a></li>
 	        </ul>
 	      </nav>
 	    </header>
 
 	    <main class="container">
+				<section class="filters">
 	      <h1 class="visually-hidden">Фильтр поиска отеля</h1>
+					<form action="https://echo.sedona.ru" method="get">
+						<fieldset>
+							<legend>Инфраструктура:</legend>
+							<label>
+								<input type="checkbox" name="pool" checked>Бассейн
+							</label>
+							<label>
+								<input type="checkbox" name="parking">Праковка
+							</label>
+							<label>
+								<input type="checkbox" name="wi-fi">Wi-fi
+							</label>
+						</fieldset>
 
-	      <!-- Здесь будет фильтр поиска отеля -->
+						<fieldset>
+							<legend>Тип жилья:</legend>
+							<label>
+								<input type="checkbox" name="hotel" checked>Гостиница
+							</label>
+							<label>
+								<input type="checkbox" name="motel" checked>Мотель
+							</label>
+							<label>
+								<input type="checkbox" name="apartment" checked>Апартаменты
+							</label>
+						</fieldset>
+						<!--Тут будет ползунки стоимости-->
 
-	      <section class="sort">
-	        <h2 class="visually-hidden">Сортировка отелей</h2>
+					<input type="submit" value="Показать">
+					</form>
+
+				<section class="sort">
+	        <h2 class="visually-hidden">Результат поиска</h2>
 	        <ul>
-	          <li><b>Найдено: 3<b></li>
+	          <li><b>Найдено: 3</b></li>
 	          <li>Сортировка:</li>
 	          <ul>
 	            <li class="sort-filter-current">по цене</li>
@@ -40,13 +69,13 @@
 	      </section>
 
 	      <section class="content">
-	        <h2 class="visually-hidden">Отели</h2>
+	        <h2 class="visually-hidden">Список отелей</h2>
 	        <ul class="catalog">
 	          <li>
-	            <a href="#"><h3>Amara resort & Spa</h3></a>
-	              <a href="#">
-	                <img src="img/photo-inner-1.jpg" alt="Фотография Amara resort & Spa" width="135" height="90">
-	              </a>
+	            <a href="#">
+								<h3>Amara resort & Spa</h3>
+	              <img src="img/photo-inner-1.jpg" alt="Фотография Amara resort & Spa" width="135" height="90">
+	             </a>
 	            <span class="catalog-item">Гостиница</span>
 	            <p class="catalog-item-price">
 	              <span>от 4000  Р.</span>
@@ -60,10 +89,10 @@
 	          </li>
 
 	          <li>
-	            <a href="#"><h3>Desert Quail Inn</h3></a>
-	              <a href="#">
-	                <img src="img/photo-inner-2.jpg" alt="Фотография Desert Quail Inn" width="135" height="90">
-	              </a>
+	            <a href="#">
+								<h3>Desert Quail Inn</h3>
+	              <img src="img/photo-inner-2.jpg" alt="Фотография Desert Quail Inn" width="135" height="90">
+	             </a>
 	            <span class="catalog-item">Мотель</span>
 	            <p class="catalog-item-price">
 	              <span>от 3000  Р.</span>
@@ -77,10 +106,9 @@
 	          </li>
 
 	          <li>
-	            <a href="#"><h3>Villas at Poco Diablo</h3></a>
-	              <a href="#">
-	                <img src="img/photo-inner-3.jpg" alt="Фотография Villas at Poco Diablo" width="135" height="90">
-	              </a>
+	            <a href="#"><h3>Villas at Poco Diablo</h3>
+	              <img src="img/photo-inner-3.jpg" alt="Фотография Villas at Poco Diablo" width="135" height="90">
+	             </a>
 	            <span class="catalog-item">Апартаменты</span>
 	            <p class="catalog-item-price">
 	              <span>от 2000  Р.</span>
@@ -99,21 +127,18 @@
 	    <footer class="main-footer">
 	      <a href="#">#VisitSedona</a>
 
-	      <div class="footer-social">
-	        <ul>
-	          <li><a class="social-button" href="#">Вконтакте</li>
-	          <li><a class="social-button" href="#">Фейсбук</li>
-	          <li><a class="social-button" href="#">Инстаграм</li>
-	        </ul>
-	      </div>
+				<div class="footer-social">
+          <ul>
+            <li><a class="social-button" href="#" aria-label="Седона в Твиттере"></a></li>
+            <li><a class="social-button" href="#" aria-label="Седона на Фейсбуке"></a></li>
+            <li><a class="social-button" href="#" aria-label="Седона на Ютубе"></a></li>
+          </ul>
+        </div>
 
 	      <p class="footer-copyright">
 	        <span>Website by</span>
 	        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg"></a>
 	      </p>
 	    </footer>
-
-	    <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p> -->
-
-	  </body>
+		</body>
 	</html>
