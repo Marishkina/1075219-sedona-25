@@ -1,10 +1,13 @@
  <!DOCTYPE html>
  <html lang="ru">
    <head>
-     <meta charset="utf-8">
-     <title>HTML Academy: Седона</title>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
    </head>
-   <body>
+   <body class="main-page">
      <header class="main-header">
        <nav class="main-navigation">
          <p class="main-navigation-logo">
@@ -26,12 +29,13 @@
          <img src="img/welcome.svg" width="459" height="353" alt="Приветствие">
        </section>
 
-       <section class="content">
-         <h2 class="page-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+       <section class="content-main">
+         <h2 class="page-title">Седона - небольшой городок в Аризоне,<br>
+            заслуживающий большего!</h2>
          <p>Рассмотрим 5 причин почему Седона круче, чем Гранд Каньон!</p>
          <ul class="breadcrumbs">
            <li>
-             <h3>Настоящий городок</h3>
+             <h3>Настоящий<br> городок</h3>
              <span>- №1 -</span>
              <p>Седона - не аттракцион для туристов, там течёт своя жизнь!</p>
            </li>
@@ -71,21 +75,19 @@
            </li>
 
            <li>
-             <h3>Небольшая площадь</h3>
-             <span>
-               - №3 -
-             Все достопримечательности находятся очень близко
-             </span>
+             <h3>Небольшая<br> площадь</h3>
+             <span>- №3 -</span>
+             <p>Все достопримечательности находятся очень близко</p>
            </li>
 
            <li>
-             <h3>Красивая дорога</h3>
+             <h3>Красивая<br> дорога</h3>
              <span> - №4 -</span>
              <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
            </li>
 
            <li>
-             <h3>Мало туристов</h3>
+             <h3>Мало<br> туристов</h3>
              <span>- №5 -</span>
              <p>Большинство едет в Гранд Каньон и толпится там</p>
            </li>
@@ -94,15 +96,16 @@
 
        <section class="search-form">
          <b>Заинтересовались</b>
-         <p>Укажите предполагаемые даты поездки, и мы покажем лучшие предложения гостиниц в Седоне</p>
+         <p>Укажите предполагаемые даты поездки,<br>
+           и мы покажем лучшие предложения гостиниц в Седоне</p>
          <button type="button">Поиск гостиницы в Седоне</button>
          <form action="https://echo.sedona.ru" method="get">
           <label>Дата заезда:
            <input type="text" name="arrival date" placeholder="24 апреля 2017">
-          </label>
+         </label><br>
           <label>Дата выезда:
            <input type="text" name="departure date" placeholder="4 июля 2017">
-          </label>
+          </label><br>
           <label>Взрослые:
            <input class="half-width" type="text" name="adult" placeholder="2">
           </label>
@@ -115,13 +118,13 @@
      </main>
 
      <footer class="main-footer">
-       <a href="#">#VisitSedona</a>
+       <a class="footer-logo" href="#">#VisitSedona</a>
 
        <div class="footer-social">
          <ul>
-           <li><a class="social-button" href="#" aria-label="Седона в Твиттере"></a></li>
-           <li><a class="social-button" href="#" aria-label="Седона на Фейсбуке"></a></li>
-           <li><a class="social-button" href="#" aria-label="Седона на Ютубе"></a></li>
+           <li><a class="social-button" href="#" aria-label="Седона в Твиттере">Твиттер</a></li>
+           <li><a class="social-button" href="#" aria-label="Седона на Фейсбуке">Фейсбук</a></li>
+           <li><a class="social-button" href="#" aria-label="Седона на Ютубе">Ютуб</a></li>
          </ul>
        </div>
 

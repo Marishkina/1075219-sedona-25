@@ -1,0 +1,335 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+
+}
+
+.main-page {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+nav {
+background-color: #ffffff;
+}
+
+.main-navigation-logo {
+  text-align: center;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  font-size: : 14px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #81b3d2;
+}
+
+.site-navigation a:active {
+  color: #d1d1d1;
+}
+
+.intro {
+  background-image: url("../img/background-photo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 800px;
+
+  background-color: #ffffff;
+}
+
+.page-title {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #000000;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs h3 {
+  font-size: 21px;
+  font-weight: 700px
+  color: #000000;
+}
+
+.content-main li:first-child,
+.content-main li:nth-child(7) {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.content-main li:nth-child(8),
+.content-main li:nth-child(9),
+.content-main li:last-child {
+  background-color: #eeeeee;
+}
+
+.search-form b {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.search-form p {
+  line-height: 24px;
+}
+
+button {
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 26px;
+  color: #ffffff;
+  background-color: #766357;
+}
+
+button:hover,
+button:focus {
+  background-color: #604e43;
+}
+
+button:active {
+  color: #928a85;
+  background-color: #503e33;
+}
+
+
+/* форма поиска отеля */
+form {
+  width: 570px;
+  height: 400px;
+  background-color: #ffffff;
+  margin: auto;
+  padding: 55px;
+}
+
+label {
+  font-weight: 700px;
+  line-height: 26px;
+}
+
+input {
+  background-color: #f2f2f2;
+  border: none;
+  width: 346px;
+  height: 38px;
+  margin-bottom: 30px;
+}
+
+.half-width {
+  width: 115px;
+  height: 38px;
+}
+
+input:hover {
+  background-color: #ebebeb;
+  border: none;
+}
+
+input:focus {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+}
+
+input[type="submit"] {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #ffffff;
+  background-color: #81b3d2;
+  margin-top: 55px auto;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  color: #ffffff;
+  background-color: #669ec0;
+}
+
+input[type="submit"]:active {
+  color: #88b6d1;
+  background-color: #5496bd;
+}
+
+/* конец поиска отеля */
+
+.main-footer {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-logo:hover,
+.footer-logo:focus {
+  color: #81b3d2;
+}
+
+.footer-logo:active {
+  color: #cacaca;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.social-button {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #669ec0;
+}
+
+.social-button:active {
+  color: #88b6d1;
+  background-color: #5496bd;
+}
+
+.footer-copyright span {
+  line-height: 26px;
+}
+
+/*внутренняя страничка*/
+.site-navigation-current{
+  color: #766357;
+}
+
+.filters {
+  background-image: url("../img/filter-background-inner.jpg");
+  background-repeat: no-repeat;
+}
+
+fieldset {
+  border: none;
+}
+
+.sort ul {
+  list-style: none;
+}
+
+.sort b {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.sort li {
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.sort-filter a {
+  color: #d1d1d1;
+  border-bottom: dashed;
+  border-color: #81b3d2;
+}
+
+.sort-filter a:hover,
+.sort-filter a:focus {
+  color: #81b3d2;
+}
+
+.sort-filter a:active {
+  color: #000000;
+  border-bottom: none;
+}
+
+.sort-filter-current a{
+  color: #81b3d2;
+  border-bottom: none;
+}
+
+.catalog li {
+  list-style: none;
+  border-top: 1px solid #d1d1d1;
+  border-bottom: 0.5px solid #d1d1d1;
+}
+
+.catalog h3 {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.catalog h3:hover,
+.catalog h3:focus {
+  color: #81b3d2;
+}
+
+.catalog h3:active {
+  color: #c6c6c6;
+}
+
+.catalog-item,
+.catalog-item-price {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.booking a {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.booking a:first-child {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.booking a:first-child:hover,
+.bookint a:first-child:focus {
+  color: #ffffff;
+  background-color: #669ec0;
+}
+
+.booking a:first-child:active {
+  color: #88b6d1;
+  background-color: #5496bd;
+}
+
+.booking a:nth-child(2) {
+  color: #ffffff;
+  background-color: #766357;
+}
+
+.booking a:nth-child(2):hover,
+.bookint a:nth-child(2):focus {
+  color: #ffffff;
+  background-color: #604e43;
+}
+
+.booking a:nth-child(2):active {
+  color: #928a85;
+  background-color: #503e33;
+}
+
+.catalog-item-rating span {
+  color: #666666;
+  background-color: #f2f2f2;
+}
