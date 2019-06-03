@@ -63,6 +63,7 @@ background-color: #ffffff;
   font-weight: 700;
   line-height: 26px;
   color: #000000;
+  width: 550px;
 }
 
 .breadcrumbs {
@@ -118,7 +119,7 @@ button:active {
 
 
 /* форма поиска отеля */
-form {
+.search-form form {
   width: 570px;
   height: 400px;
   background-color: #ffffff;
@@ -154,7 +155,7 @@ input:focus {
   border: 2px solid #e5e5e5;
 }
 
-input[type="submit"] {
+.search-form input[type="submit"] {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -224,6 +225,23 @@ input[type="submit"]:active {
 
 fieldset {
   border: none;
+}
+
+.filters input[type="submit"] {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+}
+
+.filters input[type="submit"]:hover,
+.filters input[type="submit"]:focus,
+ .filters input[type="submit"]:active {
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .sort ul {
