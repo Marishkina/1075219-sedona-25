@@ -72,8 +72,9 @@ background-color: #ffffff;
 
 .breadcrumbs h3 {
   font-size: 21px;
-  font-weight: 700px
+  font-weight: 700;
   color: #000000;
+  width: 150px;
 }
 
 .content-main li:first-child,
