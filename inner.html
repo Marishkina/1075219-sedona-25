@@ -8,7 +8,7 @@
 	    <link href="css/style.css" rel="stylesheet">
 	  </head>
 	  <body>
-	    <header class="main-header">
+	    <header class="main-header container">
 	      <nav class="main-navigation">
 	        <a class="main-navigation-logo" href="index.html">
 	          <img src="img/logo.svg" width="140" height="72" alt="Логотип Sedona">
@@ -22,7 +22,7 @@
 	      </nav>
 	    </header>
 
-	    <main class="container">
+	    <main class="content">
 				<section class="filters">
 	      <h1 class="visually-hidden">Фильтр поиска отеля</h1>
 					<form action="https://echo.sedona.ru" method="get">
@@ -57,22 +57,27 @@
 					</form>
 				</section>
 
-				<section class="sort">
+				<section class="sort container">
 	        <h2 class="visually-hidden">Результат поиска</h2>
-	        <ul>
+	        <ul class="find">
 	          <li><b>Найдено: 3</b></li>
 	          <li>Сортировка:</li>
-	          <ul class="sort-filter">
-	            <li class="sort-filter-current"><a>по цене</a></li>
-	            <li><a href="#">по типу</a></li>
-	            <li><a href="#">по рейтингу</a></li>
-	          </ul>
-	          <li><button class="sort-button" type="button"></button></li>
-	          <li><button class="sort-button-current" type="button"></button></li>
-	        </ul>
+	          <li>
+							<ul class="sort-filter">
+	            	<li class="sort-filter-current"><a>по цене</a></li>
+	            	<li><a href="#">по типу</a></li>
+	            	<li><a href="#">по рейтингу</a></li>
+	          	</ul>
+						</li>
+						<li>
+							<ul class="sort-button">
+	          		<li><button type="button"></button></li>
+	          		<li><button class="sort-button-current" type="button"></button></li>
+	        		</ul>
+						</li>
 	      </section>
 
-	      <section class="content">
+	      <section class="content container">
 	        <h2 class="visually-hidden">Список отелей</h2>
 	        <ul class="catalog">
 	          <li>

@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: auto;
   padding: 0;
 
   font-family: 'PT Sans', Arial, sans-serif;
@@ -9,12 +9,22 @@ body {
   color: #333333;
   text-transform: uppercase;
 
+  width: 1200px;
   background-color: #ffffff;
 
 }
 
-.main-page {
-  text-align: center;
+.container {
+  width: 1200px;
+  margin: auto;
+  margin-left: 73px;
+  margin-right: 73px;
+}
+
+.main-header {
+  width: 1200px;
+  height: 56px;
+  background-color: transparent;
 }
 
 a {
@@ -22,16 +32,23 @@ a {
   color: #000000;
 }
 
-nav {
-background-color: #ffffff;
+.main-navigation {
+  display: flex;
+  margin: 0;
+  background-color: #ffffff;
 }
 
 .main-navigation-logo {
-  text-align: center;
+  margin-top: 0 auto;
+  /* margin-left: 460px; */
 }
 
 .site-navigation {
+  display: flex;
   list-style: none;
+  margin-top: 16px;
+  margin-bottom: 18px;
+  margin-left: 0;
 }
 
 .site-navigation a {
@@ -53,53 +70,121 @@ background-color: #ffffff;
   background-image: url("../img/background-photo.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  width: 1200px;
   height: 800px;
 
   background-color: #ffffff;
 }
 
+.intro img {
+  width: 459px;
+  margin-left: 370px;
+  margin-top: 76px;
+}
+
 .page-title {
+  margin: 0;
+  padding: 0;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   color: #000000;
   width: 550px;
+  text-align: center;
+  margin-left: 325px;
+  margin-bottom: 34px;
+}
+
+.content-main p {
+  text-align: center;
+  margin-bottom: 51px;
 }
 
 .breadcrumbs {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1200px;
   list-style: none;
 }
 
+.breadcrumbs li:not(li:nth-child(2)):not(nth-child(6)) {
+  width: 400px;
+  height: 256px;
+}
+
+.breadcrumbs li:first-child,
+.breadcrumbs li:nth-child(7) {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.breadcrumbs li:nth-child(3),
+.breadcrumbs li:nth-child(4),
+.breadcrumbs li:nth-child(5) {
+  background-color: #ffffff;
+}
+
+.breadcrumbs li:nth-child(8),
+.breadcrumbs li:nth-child(9),
+.breadcrumbs li:last-child {
+  background-color: #eeeeee;
+  margin-bottom: 58px;
+}
+
 .breadcrumbs h3 {
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
   font-size: 21px;
   font-weight: 700;
   color: #000000;
   width: 150px;
 }
 
-.content-main li:first-child,
-.content-main li:nth-child(7) {
+.breadcrumbs li:first-child h3,
+.breadcrumbs li:nth-child(7) h3 {
   color: #ffffff;
-  background-color: #81b3d2;
 }
 
-.content-main li:nth-child(8),
-.content-main li:nth-child(9),
-.content-main li:last-child {
-  background-color: #eeeeee;
+.breadcrumbs span {
+  display: block;
+  margin-left: 176px;
+  margin-top: 32px;
+}
+
+.breadcrumbs p {
+  width: 290px;
+}
+
+.search-form {
+  width: 1200px;
+  height: 292px;
+  background-color: #ffffff;
 }
 
 .search-form b {
+  padding-left: 450px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
 }
 
 .search-form p {
+  margin-top: 30px;
+  margin-left: 375px;
+  margin-bottom: 49px;
+  width: 440px;
+  text-align: center;
   line-height: 24px;
 }
 
-button {
+.button {
+  margin-left: 315px;
+  width: 568px;
+  height: 86px;
   font-size: 21px;
   font-weight: 700;
   text-transform: uppercase;
@@ -118,13 +203,13 @@ button:active {
   background-color: #503e33;
 }
 
-
 /* форма поиска отеля */
 .search-form form {
-  width: 570px;
-  height: 400px;
+  width: 568px;
+  height: 395px;
   background-color: #ffffff;
   margin: auto;
+  margin-bottom: 78px;
   padding: 55px;
 }
 
@@ -134,14 +219,17 @@ label {
 }
 
 input {
+  margin-bottom: 30px;
+  margin-left: 167px;
   background-color: #f2f2f2;
   border: none;
   width: 346px;
   height: 38px;
-  margin-bottom: 30px;
 }
 
 .half-width {
+  margin-left: 10px;
+  margin-bottom: 54px;
   width: 115px;
   height: 38px;
 }
@@ -157,12 +245,15 @@ input:focus {
 }
 
 .search-form input[type="submit"] {
+  margin-left: 55px;
+  width: 458px;
+  height: 58px;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   color: #ffffff;
+  text-transform: uppercase;
   background-color: #81b3d2;
-  margin-top: 55px auto;
 }
 
 input[type="submit"]:hover,
@@ -179,7 +270,17 @@ input[type="submit"]:active {
 /* конец поиска отеля */
 
 .main-footer {
+  display: flex;
+  margin-top: 78px;
+  width: 100%;
+  height: 120px;
   background-color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-logo {
+  margin-left: 132px;
+  margin-top: 49px;
+  margin-right: 256px;
 }
 
 .footer-logo:hover,
@@ -192,7 +293,10 @@ input[type="submit"]:active {
 }
 
 .footer-social ul {
+  display: flex;
   list-style: none;
+  width: 150px;
+  margin-top: 36px;
 }
 
 .social-button {
@@ -210,8 +314,10 @@ input[type="submit"]:active {
   background-color: #5496bd;
 }
 
-.footer-copyright span {
-  line-height: 26px;
+.footer-copyright {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: 101px;
 }
 
 /*внутренняя страничка*/
@@ -220,6 +326,7 @@ input[type="submit"]:active {
 }
 
 .filters {
+  margin-bottom: 31px;
   background-image: url("../img/filter-background-inner.jpg");
   background-repeat: no-repeat;
 }
@@ -240,19 +347,29 @@ fieldset {
 
 .filters input[type="submit"]:hover,
 .filters input[type="submit"]:focus,
- .filters input[type="submit"]:active {
+.filters input[type="submit"]:active {
   color: #000000;
+  background-color: #ffffff;
+}
+
+.sort {
+  display: flex;
+  height: 87px;
   background-color: #ffffff;
 }
 
 .sort ul {
   list-style: none;
+  display: flex;
+  align-items: baseline;
+  padding: 0;
 }
 
-.sort b {
+.find b {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
+  margin-right: 50px;
 }
 
 .sort li {
@@ -261,9 +378,28 @@ fieldset {
   color: #000000;
 }
 
+.find li:nth-child(2) {
+  margin-right: 41px;
+}
+
+.sort-filter li {
+  margin: 0;
+  margin-right: 35px;
+}
+
+.sort-button li:first-child {
+  margin-right: 12px;
+  margin-left: 503px;
+}
+
+.sort-button li:last-child {
+  margin-right: 0;
+  margin-left: auto;
+}
+
 .sort-filter a {
   color: #d1d1d1;
-  border-bottom: dashed;
+  border-bottom: dotted;
   border-color: #81b3d2;
 }
 
@@ -282,13 +418,31 @@ fieldset {
   border-bottom: none;
 }
 
+.sort-button {
+  margin-right: 73px;
+  margin-left: auto;
+}
+
+.content,
+.catalog {
+  margin: 0;
+}
+
+.catalog img {
+  margin-top: 31px;
+}
+
 .catalog li {
+  display: flex;
+  flex-direction: column;
   list-style: none;
   border-top: 1px solid #d1d1d1;
   border-bottom: 0.5px solid #d1d1d1;
 }
 
 .catalog h3 {
+  margin-top: 31px;
+  margin-left: 165px;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -351,4 +505,12 @@ fieldset {
 .catalog-item-rating span {
   color: #666666;
   background-color: #f2f2f2;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
