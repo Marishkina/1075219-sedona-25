@@ -1,3 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="22" viewBox="0 0 12 22">
-  <image id="fb-icon" width="12" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAWCAYAAAD0OH0aAAAAbklEQVQ4je2RMQqAMBAEN6K9/sAn+P28SmwsUrgiRAh7hyGFYOF0l8yEkMCD5EIykkwUjJ7lXcUbL4jGKghOkAAM5qRMEPmaD3FmAJspi0gZy/3OFBWag0DvqR54/0rNQQ9gkrVV5q//wx9UAXACZHqOnuTsT3YAAAAASUVORK5CYII="/>
+<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="12px" height="22px" viewBox="0 0 12 22" enable-background="new 0 0 12 22" xml:space="preserve">
+<path fill="#FFFFFF" d="M12,4V0H8C5.791,0,4,1.791,4,4v4H0v4h4v10h4V12h4V8H8V4H12z"/>
 </svg>
