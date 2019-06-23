@@ -88,11 +88,11 @@ img {
 
 .intro {
   background-image:
-  url("../img/polygon.png"),
+  url("../img/intro-mask.svg"),
   url("../img/background-photo.jpg");
   background-repeat: no-repeat;
   height: 723px;
-  background-position: 0 450px, 0 -55px;
+  background-position: 0 448px, 0 -55px;
   background-color: #ffffff;
 }
 
@@ -103,16 +103,15 @@ img {
 
 .page-title {
   position: absolute;
-  top: 565px;
-  padding: 0;
-  padding-top: 62px;
-  width: 1200px;
-  min-height: 215px;
+  top: 562px;
+  padding-top: 1px;
+  min-height: 216px;
   background-color: #ffffff;
-  box-sizing: border-box;
+  width: 1200px;
 }
 
 .page-title h2 {
+  padding-top: 61px;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -153,7 +152,7 @@ img {
 .features-list-item-2,
 .features-list-item-3,
 .features-list-item-4 {
-  height: 330px;
+  min-height: 330px;
   width: 400px;
   background-color: #ffffff;
 }
@@ -195,7 +194,7 @@ img {
 
 .features-list-item-3 h3::before  {
   content: "";
-  background-image: url("../img/icon-2.svg");
+  background-image: url("../img/icon-3.svg");
   background-repeat: no-repeat;
   margin: 0 auto;
   margin-top: 58px;
@@ -207,7 +206,7 @@ img {
 
 .features-list-item-4 h3::before  {
   content: "";
-  background-image: url("../img/icon-3.svg");
+  background-image: url("../img/icon-2.svg");
   background-repeat: no-repeat;
   margin: 0 auto;
   margin-top: 58px;
@@ -215,6 +214,7 @@ img {
   width: 75px;
   height: 76px;
   display: block;
+  margin-left: 44px;
 }
 
 .features span {
@@ -244,10 +244,7 @@ img {
 .search-form {
   margin-top: 0;
   padding: 0;
-  min-height: 764px;
-  background-image: url("../img/map.jpg");
-  background-repeat: no-repeat;
-  background-position: 0 290px;
+  min-height: 292px;
   background-color: #ffffff;
 }
 
@@ -294,19 +291,27 @@ p.search-form-intro {
 }
 
 /* форма поиска отеля */
-.search-form form {
+.search-form {
+  position: relative;
+}
+
+.modal-search-form {
+  position: absolute;
+  left: 315px;
   width: 568px;
   min-height: 395px;
   background-color: #ffffff;
   margin: auto;
-  padding-top: 28px;
-  box-sizing: border-box;
+  padding-top: 1px;
+  z-index: 1;
+  /* display: none; */
 }
 
-.search-form-wrapper {
-  margin-left: 56px;
-  margin-top: 28px;
-  width: 460px;
+.wrapper-search-form {
+  width: 465px;
+  margin-left: 55px;
+  margin-right: 55px;
+  margin-top: 54px;
 }
 
 .search-form label {
@@ -315,74 +320,153 @@ p.search-form-intro {
   line-height: 26px;
 }
 
-input {
+.arrival-date {
+  margin-right: 17px;
+  margin-bottom: 35px;
+}
+
+.departure-date {
+  margin-right: 13px;
+  margin-bottom: 35px;
+}
+
+.search-form input {
   background-color: #f2f2f2;
   border: none;
   width: 346px;
   height: 38px;
 }
 
-.arrival-date {
-  margin-right: 17px;
-}
-
-.departure-date {
-  margin-top: 35px;
-  margin-right: 13px;
-}
-
-.half-width {
-  margin-left: 10px;
-  margin-bottom: 54px;
-  width: 115px;
+input.number {
+  width: 39px;
   height: 38px;
 }
 
+.calendar {
+  position: relative;
+}
+
+.arrival-date-calendar,
+.departure-date-calendar {
+  top: 0;
+  right: 9px;
+  position: absolute;
+  background-color: transparent;
+}
+
+.arrival-date-calendar,
+.departure-date-calendar,
+.amount-minus-adult,
+.amount-plus-adult,
+.amount-minus-children,
+.amount-plus-children {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border: none;
+}
+
+.amount,
+.amount-adult,
+.amount-children {
+  display: flex;
+  height: 38px;
+}
+
+.amount-minus-adult,
+.amount-plus-adult,
+.amount-minus-children,
+.amount-plus-children {
+  background-color: #f2f2f2;
+}
+
+.minus {
+  width: 12px;
+  height: 3px;
+  font-size: 0;
+  background-color: #a9a9a9;
+  border: none;
+  cursor: pointer;
+}
+
+.minus:hover {
+  background-color: #000000;
+}
+
+.amount {
+ margin-bottom: 54px;
+ overflow: hidden;
+}
+
 .adult {
-  margin-top: 35px;
-  margin-right: 24px;
+  margin-right: 37px;
+  margin-top: 8px;
 }
 
 .children {
-  margin-top: 35px;
-  margin-left: 50px;
-  margin-right: 8px;
+  margin-left: 53px;
+  margin-right: 23px;
+  margin-top: 8px;
 }
 
-input[placeholder] {
+.calendar input[placeholder] {
   text-indent: 13px;
   font-size: 14px;
   font-weight: 900;
+  text-transform: uppercase;
 }
 
-input[placeholder].half-width  {
-  text-indent: 55px;
+.amount input[placeholder]  {
+  text-indent: 18px;
 }
 
-input::-webkit-input-placeholder {
+.search-form input::-webkit-input-placeholder {
   color: #000000;
 }
 
-input::-moz-placeholder {
+.search-form input::-moz-placeholder  {
   color: #000000;
 }
 
-input:-ms-input-placeholder {
+.search-form input:-ms-input-placeholder {
   color: #000000;
 }
 
-input:hover {
+.search-form input:hover {
   background-color: #ebebeb;
   border: none;
 }
 
-input:focus {
+.search-form input:focus {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
 }
 
-.search-form input[type="submit"] {
-  width: 100%;
+.arrival-date-calendar path,
+.departure-date-calendar path,
+.arrival-date-calendar rect,
+.departure-date-calendar rect  {
+  fill: #a9a9a9;
+}
+
+.arrival-date-calendar:hover path,
+.departure-date-calendar:hover path,
+.arrival-date-calendar:hover rect,
+.departure-date-calendar:hover rect  {
+  fill: #000000;
+}
+
+.arrival-date-calendar:active path,
+.departure-date-calendar:active path,
+.arrival-date-calendar:active rect,
+.departure-date-calendar:active rect  {
+  fill: #81b3d2;
+}
+
+.search-form button[type="submit"] {
+  width: 458px;
   height: 58px;
   font-size: 21px;
   font-weight: 700;
@@ -392,75 +476,33 @@ input:focus {
   background-color: #81b3d2;
 }
 
-input[type="submit"]:hover,
-input[type="submit"]:focus {
+.search-form button[type="submit"]:hover,
+.search-form button[type="submit"]:focus {
   color: #ffffff;
   background-color: #669ec0;
 }
 
-input[type="submit"]:active {
+.search-form button[type="submit"]:active {
   color: #88b6d1;
   background-color: #5496bd;
-}
-
-.amount,
-.calendar {
-  position: relative;
-  margin: 0;
-}
-
-.amount-minus-adult,
-.amount-plus-adult,
-.amount-minus-children,
-.amount-plus-children,
-.arrival-date-calendar,
-.departure-date-calendar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
-  background-color: #f2f2f2;
-  border: none;
-  position: absolute;
-}
-
-.amount-minus-adult {
-  left: 110px;
-  top: 28px;
-}
-
-.amount-plus-adult {
-  left: 189px;
-  top: 28px;
-}
-
-.amount-minus-children {
-  right: 82px;
-  top: 28px;
-}
-
-.amount-plus-children {
-  right: 3px;
-  top: 28px;
-}
-
-.arrival-date-calendar {
-  top: 1px;
-  right: 3px;
-}
-
-.departure-date-calendar {
-  top: 28px;
-  right: 3px;
 }
 
 /* конец поиска отеля */
 
 .footer {
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  min-height: 594px;
+  position:relative;
+  }
+
+.footer-info {
   display: flex;
   min-height: 120px;
   background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer-logo {
@@ -620,7 +662,7 @@ fieldset {
 }
 
 .sort-filter li {
-  margin-right: 35px;
+  margin-right: 32px;
 }
 
 .sort-filter a {
@@ -657,28 +699,24 @@ fieldset {
   border: none;
 }
 
-.sort-button-up {
-  transform: rotate(180deg);
-}
-
-.sort-button-up polyline,
-.sort-button-down polyline {
+.sort-button-up path,
+.sort-button-down path {
   fill: #cacaca;
 }
 
-.sort-button-down-current polyline {
+.sort-button-down-current path {
   fill: #81b3d2;
 }
 
-.sort-button-up:hover polyline,
-.sort-button-down-current:hover polyline,
-.sort-button-up:focus polyline,
-.sort-button-down-current:focus polyline {
+.sort-button-up:hover path,
+.sort-button-down-current:hover path,
+.sort-button-up:focus path,
+.sort-button-down-current:focus path {
   fill: #000000;
 }
 
-.sort-button-up:active polyline,
-.sort-button-down-current:active polyline {
+.sort-button-up:active path,
+.sort-button-down-current:active path {
   fill: #81b3d2;
 }
 
@@ -693,13 +731,18 @@ fieldset {
   padding-right: 73px;
   display: flex;
   min-height: 150px;
-  border-top: 1px solid #d1d1d1;
   border-bottom: 0.5px solid #d1d1d1;
   list-style: none;
 }
 
+.catalog-list:first-child {
+  border-top: 1px solid #d1d1d1;
+}
+
 .catalog-item-image {
   margin-top: 30px;
+  min-width: 135px;
+  min-height: 90px;
   margin-right: 30px;
 }
 
@@ -720,7 +763,7 @@ fieldset {
 }
 
 .catalog-description {
-  width: 300px;
+  margin-right: 30px;
 }
 
 .catalog-description-item,
@@ -732,56 +775,52 @@ fieldset {
   float: left;
 }
 
-.booking a {
-  font-size: 14px;
-  font-weight: 700;
-  color: #ffffff;
-}
-
 .booking {
-  text-align: center;
-  margin: 0;
-  padding: 0;
   margin-top: 45px;
   display: flex;
   clear: both;
 }
 
+.booking a {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .booking-details {
   width: 110px;
   height: 27px;
-  padding-top: 5px;
-  background-color: #81b3d2;
   margin-right: 6px;
-  box-sizing: border-box;
-}
-
-.booking-details a:hover,
-.booking-details a:focus {
-  color: #ffffff;
-  background-color: #669ec0;
-}
-
-.booking-details a:active {
-  color: #88b6d1;
-  background-color: #5496bd;
+  background-color: #81b3d2;
 }
 
 .book {
   width: 142px;
   height: 27px;
-  padding-top: 5px;
   background-color: #766357;
-  box-sizing: border-box;
 }
 
-.book a:hover,
-.book a:focus {
+a.booking-details:hover,
+a.booking-details:focus {
   color: #ffffff;
+  background-color: #669ec0;
+}
+
+a.booking-details:active {
+  color: #88b6d1;
+  background-color: #5496bd;
+}
+
+a.book:hover,
+a.book:focus {
   background-color: #604e43;
 }
 
-.book a:active {
+a.book:active {
   color: #928a85;
   background-color: #503e33;
 }
