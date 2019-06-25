@@ -157,9 +157,15 @@ img {
 }
 
 .features-list-wrapper {
-  display: flex;
-  width: 100%;
+  min-height: 256px;
   background-color: #81b3d2;
+}
+
+.features-list-wrapper ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .features-list-item-1,
@@ -254,6 +260,7 @@ img {
 .features-list p {
   width: 305px;
   margin: 0 auto;
+  margin-bottom: 49px;
 }
 
 .features-list-item-1 p,
@@ -269,30 +276,28 @@ img {
 .search-form {
   position: relative;
   min-height: 880px;
-}
-
-.search-form-intro {
-  padding: 52px;
-  padding-bottom: 0;
-  display: block;
   margin: 0 auto;
+  padding-top: 52px;
   text-align: center;
   background-color: #ffffff;
-  min-height: 290px;
   box-sizing: border-box;
 }
 
-.search-form-intro b  {
+.search-form b  {
   display: block;
+  width: 650px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
+  margin: 0 auto;
   margin-bottom: 22px;
 }
 
-.search-form-intro p {
+.search-form p {
+  width: 650px;
   line-height: 24px;
-  margin-bottom: 46px;
+  margin: 0 auto;
+  margin-bottom: 49px;
 }
 
 .button {
@@ -322,18 +327,13 @@ img {
 }
 
 .map {
-  overflow: hidden;
-  position:relative;
-  min-height: 592px;
+  height: 594px;
 }
 
 .map iframe {
-  left:0;
-  top:0;
-  height:100%;
-  width:100%;
-  position:absolute;
-  border: none;
+  width: 100%;
+  height: 594px;
+  border: 0;
 }
 
 
@@ -341,8 +341,8 @@ img {
 
 .modal-search-form {
   position: absolute;
-  left: 316px;
-  bottom: 197px;
+  left: 50%;
+  transform: translatex(-50%);
   width: 568px;
   min-height: 395px;
   background-color: #ffffff;
@@ -352,9 +352,8 @@ img {
 
 .wrapper-search-form {
   width: 465px;
-  margin-left: 55px;
-  margin-right: 55px;
-  margin-top: 55px;
+  margin: 56px;
+  margin-left: 52px;
 }
 
 .search-form label {
@@ -364,7 +363,7 @@ img {
 }
 
 .arrival-date {
-  margin-right: 17px;
+  margin-right: 18px;
   margin-bottom: 35px;
 }
 
@@ -375,76 +374,68 @@ img {
 
 .search-form input {
   background-color: #f2f2f2;
-  border: none;
-  width: 342px;
-  height: 34px;
+  width: 346px;
+  height: 38px;
   border: 2px solid transparent;
+  box-sizing: border-box;
 }
 
 input.half-width {
-  width: 110px;
-  height: 34px;
+  width: 38px;
+  height: 38px;
   border: 2px solid transparent;
 }
 
-.calendar,
-.amount {
+.calendar {
   position: relative;
 }
 
 .arrival-date-calendar,
 .departure-date-calendar {
   top: 0;
-  right: 9px;
+  right: 5px;
 }
 
 .arrival-date-calendar,
-.departure-date-calendar,
-.minus-button,
-.plus-button {
+.departure-date-calendar {
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 38px;
   height: 38px;
-  border: 2px solid transparent;
-  position: absolute;
   background-color: transparent;
+  border: 2px solid transparent;
 }
 
-.amount,
+.count,
 .amount-adult,
 .amount-children {
   display: flex;
-  height: 38px;
+  flex-wrap: wrap;
+}
+
+.count {
   margin-bottom: 54px;
 }
 
 .adult {
-  margin-right: 37px;
+  margin-right: 42px;
   margin-top: 8px;
 }
 
 .children {
   margin-left: 53px;
-  margin-right: 23px;
+  margin-right: 28px;
   margin-top: 8px;
 }
 
-.minus-button-adult {
-  left: 110px;
-}
-
-.plus-button-adult {
-  left: 185px;
-}
-
-.minus-button-children {
-  right: 80px;
-}
-
-.plus-button-children {
-  right: 10px;
+.minus-button,
+.plus-button {
+  width: 38px;
+  height: 38px;
+  background-color: #f2f2f2;
+  border: 2px solid transparent;
 }
 
 .arrival-date-calendar path,
@@ -479,14 +470,14 @@ input.half-width {
 }
 
 .calendar input[placeholder] {
-  text-indent: 13px;
+  text-indent: 12px;
   font-size: 14px;
   font-weight: 900;
   text-transform: uppercase;
 }
 
-.amount input[placeholder]  {
-  text-indent: 54px;
+.count input[placeholder]  {
+  text-indent: 13px;
 }
 
 .search-form input::-webkit-input-placeholder {
@@ -548,10 +539,14 @@ input.half-width {
   width: 100%;
 }
 
+.footer-inner {
+  background-color: #ffffff;
+}
+
 .footer-logo {
   height: 20px;
   margin-left: 132px;
-  margin-top: 52px;
+  margin-top: 50px;
   margin-right: 256px;
   margin-bottom: 30px;
   font-size: 21px;
@@ -570,7 +565,7 @@ input.half-width {
 .footer-social ul {
   display: flex;
   list-style: none;
-  margin-top: 38px;
+  margin-top: 35px;
   width: 150px;
   min-height: 48px;
   padding: 0;
@@ -607,7 +602,7 @@ input.half-width {
   justify-content: center;
   width: 200px;
   min-height: 50px;
-  margin-top: 20px;
+  margin-top: 14px;
   margin-left: auto;
   margin-right: 101px;
 }
@@ -935,6 +930,10 @@ input.half-width {
 .sort-button-up:active path,
 .sort-button-down:active path {
   fill: #81b3d2;
+}
+
+.catalog {
+  background-color: #ffffff;
 }
 
 .catalog ul {
