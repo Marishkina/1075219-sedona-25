@@ -383,7 +383,6 @@ img {
 input.half-width {
   width: 38px;
   height: 38px;
-  border: 2px solid transparent;
 }
 
 .calendar {
@@ -435,7 +434,7 @@ input.half-width {
   width: 38px;
   height: 38px;
   background-color: #f2f2f2;
-  border: 2px solid transparent;
+  border: none;
 }
 
 .arrival-date-calendar path,
@@ -686,7 +685,7 @@ input.half-width {
   background-repeat: no-repeat;
 }
 
-.filters-column-input:checked + label::after {
+.filters-column-input:checked + label::before {
   content: "";
   position: absolute;
   top: -4px;
@@ -697,10 +696,34 @@ input.half-width {
   background-repeat: no-repeat;
 }
 
-.filters-column-input:disabled + label,
-.filters-column-input:disabled + label::before,
-.filters-column-input:disabled + label::after {
+.filters-column-input:disabled + label {
+  position: relative;
+  display: block;
+  user-select: none;
+  margin-left: 39px;
+  margin-bottom: 24px;
   color: #6a6a6a;
+}
+
+.filters-column-input:disabled + label::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -39px;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-off-disabled.svg");
+  background-repeat: no-repeat;
+}
+
+.filters-column-input:checked:disabled + label::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -39px;
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/checkbox-on-disabled.svg");
 }
 
 .filters-column input[type="checkbox"] {
@@ -799,7 +822,7 @@ input.half-width {
 }
 
 .range-toggle:hover {
-  background: #1c4f80;
+  transform: scale(1.1);
 }
 
 .range-toggle-min {
