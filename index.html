@@ -189,7 +189,7 @@
                     </button>
                 </div>
               </div>
-              <button type="submit">Найти</button>
+              <button class="send-form" type="submit">Найти</button>
             </div>
            </form>
            <div class="map">
@@ -243,5 +243,25 @@
              </a>
            </p>
        </footer>
+
+      <script>
+        var link = document.querySelector(".button");
+        var popup = document.querySelector(".modal-search-form");
+        var sendForm = popup.querySelector(".send-form");
+
+        var arrivalDate = popup.querySelector(".arrival-date-calendar");
+
+        link.addEventListener("click", function (evt) {
+          evt.preventDefault();
+          popup.classList.toggle("modal-search-form-show");
+          arrivalDate.focus();
+        });
+
+        sendForm.addEventListener("sumbit", function (evt) {
+            evt.preventDefault();
+            console.log("отправка формы");
+        });
+      </script>
+
    </body>
  </html>
