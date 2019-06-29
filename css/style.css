@@ -328,6 +328,7 @@ img {
 
 .map {
   height: 594px;
+  background-image: url("../img/map.jpg");
 }
 
 .map iframe {
@@ -339,25 +340,64 @@ img {
 
 /* форма поиска отеля */
 
-.modal-search-form {
+@keyframes appearance {
+  0% {opacity: 0.25}
+  70% {opacity: 0.5}
+  90% {opacity: 0.75}
+  100% {opacity: 1}
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+    border: 2px solid #f78ca7;
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-1px);
+
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(1px);
+  }
+}
+
+.wrapper-search-form {
   position: absolute;
   left: 50%;
   transform: translatex(-50%);
   width: 568px;
   min-height: 395px;
+  padding: 56px;
+  padding-left: 52px;
   background-color: #ffffff;
+  box-sizing: border-box;
   z-index: 1;
   display: none;
 }
 
 .modal-search-form-show {
   display: block;
+  animation-name: appearance;
+  animation-duration: 0.4s;
 }
 
-.wrapper-search-form {
+.modal-error {
+  animation-name: shake;
+  animation-duration: 0.6s;
+}
+
+.modal-search-form {
   width: 465px;
-  margin: 56px;
-  margin-left: 52px;
 }
 
 .search-form label {

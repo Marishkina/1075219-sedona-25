@@ -101,9 +101,9 @@
            <p>Укажите предполагаемые даты поездки,<br>
              и мы покажем вам лучшие предложения гостиниц в Седоне</p>
            <button class="button" type="button">Поиск гостиницы в Седоне</button>
-           <form class="modal-search-form" action="https://echo.sedona.ru" method="get">
-            <div class="wrapper-search-form">
-              <div class="calendar">
+           <div class="wrapper-search-form">
+             <form class="modal-search-form" action="https://echo.sedona.ru" method="get">
+               <div class="calendar">
                 <label class="arrival-date" for="arrival-date">Дата заезда:</label>
                 <input id="arrival-date" type="text" name="arrival-date" placeholder="24 апреля 2017">
                 <button type="button" class="arrival-date-calendar">
@@ -189,9 +189,9 @@
                     </button>
                 </div>
               </div>
-              <button class="send-form" type="submit">Найти</button>
-            </div>
-           </form>
+              <button type="submit">Найти</button>
+            </form>
+           </div>
            <div class="map">
              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d161560.905771494!2d-111.79614066191874!3d34.8625097161578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1561310182061!5m2!1sru!2sru" ></iframe>
            </div>
@@ -244,24 +244,7 @@
            </p>
        </footer>
 
-      <script>
-        var link = document.querySelector(".button");
-        var popup = document.querySelector(".modal-search-form");
-        var sendForm = popup.querySelector(".send-form");
-
-        var arrivalDate = popup.querySelector(".arrival-date-calendar");
-
-        link.addEventListener("click", function (evt) {
-          evt.preventDefault();
-          popup.classList.toggle("modal-search-form-show");
-          arrivalDate.focus();
-        });
-
-        sendForm.addEventListener("sumbit", function (evt) {
-            evt.preventDefault();
-            console.log("отправка формы");
-        });
-      </script>
+       <script src="js/popup.js"></script>
 
    </body>
  </html>
