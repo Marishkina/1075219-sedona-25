@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -114,6 +114,7 @@ img {
 }
 
 .page-title {
+  padding: 55px;
   padding-top: 61px;
   min-height: 216px;
   background-color: #ffffff;
@@ -166,12 +167,6 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.features-list-item-1,
-.features-list-item-5 {
-  width: 400px;
-  color: #ffffff;
 }
 
 .features-list-item-1,
@@ -269,7 +264,7 @@ img {
   width: 280px;
 }
 
-.features-list-item-8 p{
+.features-list-item-8 p {
   width: 250px;
 }
 
@@ -283,7 +278,7 @@ img {
   box-sizing: border-box;
 }
 
-.search-form b  {
+.search-form b {
   display: block;
   width: 650px;
   font-size: 30px;
@@ -382,11 +377,10 @@ img {
   background-color: #ffffff;
   box-sizing: border-box;
   z-index: 1;
-  display: none;
 }
 
-.modal-search-form-show {
-  display: block;
+.wrapper-search-form-close {
+  display: none;
   animation-name: appearance;
   animation-duration: 0.4s;
 }
@@ -404,6 +398,7 @@ img {
   display: inline-block;
   font-weight: 700;
   line-height: 26px;
+  vertical-align: baseline;
 }
 
 .arrival-date {
@@ -421,6 +416,7 @@ img {
   width: 346px;
   height: 38px;
   border: 2px solid transparent;
+  outline: none;
   box-sizing: border-box;
 }
 
@@ -437,6 +433,7 @@ input.half-width {
 .departure-date-calendar {
   top: 0;
   right: 5px;
+  outline: none;
 }
 
 .arrival-date-calendar,
@@ -479,6 +476,7 @@ input.half-width {
   height: 38px;
   background-color: #f2f2f2;
   border: none;
+  outline: none;
 }
 
 .arrival-date-calendar path,
@@ -535,11 +533,19 @@ input.half-width {
   color: #000000;
 }
 
-.search-form input:hover {
+.search-form input:hover,
+.arrival-date-calendar:hover,
+.departure-date-calendar:hover,
+.minus-button:hover,
+.plus-button:hover {
   background-color: #ebebeb;
 }
 
-.search-form input:focus {
+.search-form input:focus,
+.arrival-date-calendar:focus,
+.departure-date-calendar:focus,
+.minus-button:focus,
+.plus-button:focus {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
 }
@@ -698,7 +704,7 @@ input.half-width {
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
-  margin-bottom: 17px;
+  margin-bottom: 35px;
   box-sizing: border-box;
 }
 
@@ -707,7 +713,7 @@ input.half-width {
   font-weight: 900;
   border: none;
   padding-top: 27px;
-  margin-bottom: 26px;
+  margin-bottom: 5px;
 }
 
 .filters-column label {
@@ -715,7 +721,12 @@ input.half-width {
   display: block;
   user-select: none;
   margin-left: 39px;
-  margin-bottom: 24px;
+  margin-bottom: 4px;
+}
+
+.filters-column label:hover,
+.filters-column-input:focus + label::before {
+  opacity: 0.6;
 }
 
 .filters-column-input + label::before {
@@ -768,10 +779,12 @@ input.half-width {
   width: 27px;
   height: 23px;
   background-image: url("../img/checkbox-on-disabled.svg");
+  background-repeat: no-repeat;
 }
 
 .filters-column input[type="checkbox"] {
-  display: none;
+  /* display: none; */
+  opacity: 0;
 }
 
 .filter-range {
@@ -812,11 +825,11 @@ input.half-width {
 }
 
 .price-controls label {
+  padding-top: 5px;
   display: inline-block;
-
   font-size: 14px;
-  line-height: 30px;
-  vertical-align: top;
+  line-height: 14px;
+  vertical-align: baseline;
 }
 
 .price-controls .min-price,
@@ -1031,9 +1044,10 @@ input.half-width {
 
 .catalog-list h3 {
   margin-top: 28px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   font-size: 21px;
   font-weight: 700;
+  padding: 0;
 }
 
 .catalog h3:hover,
@@ -1051,17 +1065,16 @@ input.half-width {
 
 .catalog-description-item,
 .catalog-description-item-price {
-  display: block;
   font-size: 14px;
-  margin-right: 6px;
+  margin-right: 0;
   width: 110px;
-  float: left;
+  display: inline-block;
+  vertical-align: baseline;
 }
 
 .booking {
-  margin-top: 45px;
+  margin-top: 15px;
   display: flex;
-  clear: both;
 }
 
 .booking a {

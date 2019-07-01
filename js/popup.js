@@ -20,9 +20,11 @@
    isStorageSupport = false;
  }
 
+  popup.classList.add("wrapper-search-form-close");
+
   link.addEventListener("click", function (evt) {
     evt.preventDefault();
-    popup.classList.toggle("modal-search-form-show");
+    popup.classList.toggle("wrapper-search-form-close");
     arrivalDate.classList.remove("modal-error");
     departureDate.classList.remove("modal-error");
     adult.classList.remove("modal-error");
