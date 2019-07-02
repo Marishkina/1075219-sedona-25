@@ -107,9 +107,13 @@ img {
 }
 
 .intro::after {
-  content: url("../img/intro-mask.svg");
+  content: "";
+  background-image: url("../img/intro-mask.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
   position: absolute;
-  bottom: -3px;
+  bottom: -4px;
+  width: 1200px;
   height: 60px;
 }
 
@@ -199,7 +203,7 @@ img {
   font-size: 21px;
   font-weight: 700;
   color: #000000;
-  width: 150px;
+  width: 155px;
 }
 
 .features-list-item-1 h3,
@@ -212,8 +216,8 @@ img {
   background-image: url("../img/icon-1.svg");
   background-repeat: no-repeat;
   margin: 0 auto;
-  margin-top: 58px;
-  margin-bottom: 28px;
+  margin-top: 60px;
+  margin-bottom: 26px;
   width: 75px;
   height: 76px;
   display: block;
@@ -224,8 +228,8 @@ img {
   background-image: url("../img/icon-3.svg");
   background-repeat: no-repeat;
   margin: 0 auto;
-  margin-top: 58px;
-  margin-bottom: 28px;
+  margin-top: 60px;
+  margin-bottom: 26px;
   width: 75px;
   height: 76px;
   display: block;
@@ -236,12 +240,12 @@ img {
   background-image: url("../img/icon-2.svg");
   background-repeat: no-repeat;
   margin: 0 auto;
-  margin-top: 58px;
-  margin-bottom: 28px;
+  margin-top: 55px;
+  margin-bottom: 31px;
   width: 75px;
   height: 76px;
   display: block;
-  margin-left: 44px;
+  margin-left: 46px;
 }
 
 .features span {
@@ -481,19 +485,15 @@ input.half-width {
 
 .arrival-date-calendar path,
 .departure-date-calendar path,
-.arrival-date-calendar rect,
-.departure-date-calendar rect,
 .minus-button,
-.minus-button,
-.plus-button,
 .plus-button {
   fill: #a9a9a9;
 }
 
 .arrival-date-calendar:hover path,
 .departure-date-calendar:hover path,
-.arrival-date-calendar:hover rect,
-.departure-date-calendar:hover rect,
+.arrival-date-calendar:focus path,
+.departure-date-calendar:focus path,
 .minus-button:hover,
 .minus-button:focus,
 .plus-button:hover,
@@ -503,22 +503,23 @@ input.half-width {
 
 .arrival-date-calendar:active path,
 .departure-date-calendar:active path,
-.arrival-date-calendar:active rect,
-.departure-date-calendar:active rect,
 .minus-button:active,
 .plus-button:active {
   fill: #81b3d2;
 }
 
 .calendar input[placeholder] {
-  text-indent: 12px;
   font-size: 14px;
   font-weight: 900;
   text-transform: uppercase;
 }
 
+.calendar input {
+  padding-left: 12px;
+}
+
 .count input[placeholder]  {
-  text-indent: 13px;
+  text-align: center;
 }
 
 .search-form input::-webkit-input-placeholder {
@@ -535,17 +536,11 @@ input.half-width {
 
 .search-form input:hover,
 .arrival-date-calendar:hover,
-.departure-date-calendar:hover,
-.minus-button:hover,
-.plus-button:hover {
+.departure-date-calendar:hover {
   background-color: #ebebeb;
 }
 
-.search-form input:focus,
-.arrival-date-calendar:focus,
-.departure-date-calendar:focus,
-.minus-button:focus,
-.plus-button:focus {
+.search-form input:focus {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
 }
@@ -704,7 +699,7 @@ input.half-width {
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
-  margin-bottom: 35px;
+  margin-bottom: 33px;
   box-sizing: border-box;
 }
 
@@ -713,7 +708,7 @@ input.half-width {
   font-weight: 900;
   border: none;
   padding-top: 27px;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .filters-column label {
@@ -721,7 +716,7 @@ input.half-width {
   display: block;
   user-select: none;
   margin-left: 39px;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
 .filters-column label:hover,
@@ -783,12 +778,11 @@ input.half-width {
 }
 
 .filters-column input[type="checkbox"] {
-  /* display: none; */
   opacity: 0;
 }
 
 .filter-range {
-  width: 314px;
+  width: 316px;
   margin-left: auto;
   margin-top: 28px;
 
@@ -986,7 +980,7 @@ input.half-width {
 .sort-button a {
   display: block;
   width: 11px;
-  height: 10px;
+  height: 15px;
   border: none;
   margin-left: 12px;
 }

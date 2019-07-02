@@ -5,7 +5,6 @@
   var storage = localStorage.getItem("adult");
   var storage = localStorage.getItem("children");
 
-  var arrivalDateCalendar = popup.querySelector(".arrival-date-calendar");
   var arrivalDate = popup.querySelector("[name=arrival-date]");
   var departureDate = popup.querySelector("[name=departure-date]");
   var adult = popup.querySelector(".half-width-adult");
@@ -29,7 +28,7 @@
     departureDate.classList.remove("modal-error");
     adult.classList.remove("modal-error");
     children.classList.remove("modal-error");
-    arrivalDateCalendar.focus();
+    arrivalDate.focus();
 });
 
 sendForm.addEventListener("submit", function (evt) {
