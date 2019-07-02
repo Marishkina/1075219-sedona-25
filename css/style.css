@@ -689,6 +689,9 @@ input.half-width {
 
 .filters-positioner {
   display: flex;
+  padding-top: 28px;
+  padding-bottom: 36px;
+  box-sizing: border-box;
 }
 
 .filters-column {
@@ -699,16 +702,13 @@ input.half-width {
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
-  margin-bottom: 33px;
-  box-sizing: border-box;
 }
 
 .filters-column legend {
   font-size: 16px;
   font-weight: 900;
   border: none;
-  padding-top: 27px;
-  margin-bottom: 8px;
+  margin-bottom: 3px;
 }
 
 .filters-column label {
@@ -720,14 +720,16 @@ input.half-width {
 }
 
 .filters-column label:hover,
+.filters-column label:focus,
+.filters-column-input:hover + label::before,
 .filters-column-input:focus + label::before {
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 .filters-column-input + label::before {
   content: "";
   position: absolute;
-  top: -4px;
+  top: 0;
   left: -39px;
   width: 23px;
   height: 23px;
@@ -738,8 +740,6 @@ input.half-width {
 .filters-column-input:checked + label::before {
   content: "";
   position: absolute;
-  top: -4px;
-  left: -39px;
   width: 27px;
   height: 23px;
   background-image: url("../img/checkbox-on.svg");
@@ -751,15 +751,12 @@ input.half-width {
   display: block;
   user-select: none;
   margin-left: 39px;
-  margin-bottom: 24px;
   color: #6a6a6a;
 }
 
 .filters-column-input:disabled + label::before {
   content: "";
   position: absolute;
-  top: -4px;
-  left: -39px;
   width: 23px;
   height: 23px;
   background-image: url("../img/checkbox-off-disabled.svg");
@@ -769,8 +766,6 @@ input.half-width {
 .filters-column-input:checked:disabled + label::before {
   content: "";
   position: absolute;
-  top: -4px;
-  left: -39px;
   width: 27px;
   height: 23px;
   background-image: url("../img/checkbox-on-disabled.svg");
@@ -784,7 +779,6 @@ input.half-width {
 .filter-range {
   width: 316px;
   margin-left: auto;
-  margin-top: 28px;
 
   color: #ffffff;
   text-transform: uppercase;
@@ -819,7 +813,7 @@ input.half-width {
 }
 
 .price-controls label {
-  padding-top: 5px;
+  padding-top: 8px;
   display: inline-block;
   font-size: 14px;
   line-height: 14px;
@@ -829,7 +823,7 @@ input.half-width {
 .price-controls .min-price,
 .price-controls .max-price {
   width: 90px;
-  padding-left: 60px;
+  padding-left: 61px;
 }
 
 .price-controls input {
@@ -1038,7 +1032,7 @@ input.half-width {
 
 .catalog-list h3 {
   margin-top: 28px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   font-size: 21px;
   font-weight: 700;
   padding: 0;
@@ -1117,7 +1111,7 @@ a.book:active {
 
 .catalog-item-rating {
   margin-left: auto;
-  margin-top: 30px;
+  margin-top: 28px;
 }
 
 .catalog-item-rating-image {
