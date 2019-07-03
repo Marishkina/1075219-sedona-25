@@ -118,7 +118,7 @@ img {
 }
 
 .page-title {
-  padding: 55px;
+  padding: 50px;
   padding-top: 61px;
   min-height: 216px;
   background-color: #ffffff;
@@ -134,7 +134,7 @@ img {
   text-align: center;
   display: block;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 }
 
 .content-main p {
@@ -197,7 +197,7 @@ img {
 
 .features h3 {
   margin: 0 auto;
-  margin-top: 49px;
+  margin-top: 48px;
   margin-bottom: 24px;
   text-align: center;
   font-size: 21px;
@@ -240,8 +240,8 @@ img {
   background-image: url("../img/icon-2.svg");
   background-repeat: no-repeat;
   margin: 0 auto;
-  margin-top: 55px;
-  margin-bottom: 31px;
+  margin-top: 56px;
+  margin-bottom: 30px;
   width: 75px;
   height: 76px;
   display: block;
@@ -251,7 +251,7 @@ img {
 .features span {
   display: block;
   margin: 0 auto;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
   text-align: center;
   width: 70px;
 }
@@ -289,14 +289,14 @@ img {
   line-height: 36px;
   font-weight: 700;
   margin: 0 auto;
-  margin-bottom: 22px;
+  margin-bottom: 23px;
 }
 
 .search-form p {
   width: 650px;
   line-height: 24px;
   margin: 0 auto;
-  margin-bottom: 49px;
+  margin-bottom: 46px;
 }
 
 .button {
@@ -326,13 +326,13 @@ img {
 }
 
 .map {
-  height: 594px;
+  height: 593px;
   background-image: url("../img/map.jpg");
 }
 
 .map iframe {
   width: 100%;
-  height: 594px;
+  height: 593px;
   border: 0;
 }
 
@@ -376,7 +376,7 @@ img {
   transform: translatex(-50%);
   width: 568px;
   min-height: 395px;
-  padding: 56px;
+  padding: 55px;
   padding-left: 52px;
   background-color: #ffffff;
   box-sizing: border-box;
@@ -406,18 +406,18 @@ img {
 }
 
 .arrival-date {
-  margin-right: 18px;
+  margin-right: 20px;
   margin-bottom: 35px;
 }
 
 .departure-date {
-  margin-right: 13px;
+  margin-right: 16px;
   margin-bottom: 35px;
 }
 
 .search-form input {
   background-color: #f2f2f2;
-  width: 346px;
+  width: 345px;
   height: 38px;
   border: 2px solid transparent;
   outline: none;
@@ -435,21 +435,13 @@ input.half-width {
 
 .arrival-date-calendar,
 .departure-date-calendar {
-  top: 0;
-  right: 5px;
-  outline: none;
-}
-
-.arrival-date-calendar,
-.departure-date-calendar {
   position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
   background-color: transparent;
-  border: 2px solid transparent;
+  border: none;
+  top: 8px;
+  right: 14px;
+  outline: none;
+  padding: 0;
 }
 
 .count,
@@ -464,14 +456,14 @@ input.half-width {
 }
 
 .adult {
-  margin-right: 42px;
-  margin-top: 8px;
+  margin-right: 43px;
+  margin-top: 7px;
 }
 
 .children {
   margin-left: 53px;
-  margin-right: 28px;
-  margin-top: 8px;
+  margin-right: 26px;
+  margin-top: 7px;
 }
 
 .minus-button,
@@ -501,6 +493,13 @@ input.half-width {
   fill: #000000;
 }
 
+.arrival-date-calendar:focus,
+.departure-date-calendar:focus,
+.minus-button:focus,
+.plus-button:focus {
+  background-color: #f2f2f2;
+}
+
 .arrival-date-calendar:active path,
 .departure-date-calendar:active path,
 .minus-button:active,
@@ -508,14 +507,14 @@ input.half-width {
   fill: #81b3d2;
 }
 
-.calendar input[placeholder] {
+.search-form input[placeholder] {
   font-size: 14px;
   font-weight: 900;
   text-transform: uppercase;
 }
 
 .calendar input {
-  padding-left: 12px;
+  padding-left: 10px;
 }
 
 .count input[placeholder]  {
@@ -590,7 +589,7 @@ input.half-width {
 .footer-logo {
   height: 20px;
   margin-left: 132px;
-  margin-top: 50px;
+  margin-top: 49px;
   margin-right: 256px;
   margin-bottom: 30px;
   font-size: 21px;
@@ -609,7 +608,7 @@ input.half-width {
 .footer-social ul {
   display: flex;
   list-style: none;
-  margin-top: 35px;
+  margin-top: 36px;
   width: 150px;
   min-height: 48px;
   padding: 0;
@@ -646,9 +645,9 @@ input.half-width {
   justify-content: center;
   width: 200px;
   min-height: 50px;
-  margin-top: 14px;
+  margin-top: 13px;
   margin-left: auto;
-  margin-right: 101px;
+  margin-right: 100px;
 }
 
 .footer-copyright a {
@@ -708,7 +707,7 @@ input.half-width {
   font-size: 16px;
   font-weight: 900;
   border: none;
-  margin-bottom: 3px;
+  margin-bottom:2px;
 }
 
 .filters-column label {
@@ -716,7 +715,7 @@ input.half-width {
   display: block;
   user-select: none;
   margin-left: 39px;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .filters-column label:hover,
