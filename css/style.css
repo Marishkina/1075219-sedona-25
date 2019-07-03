@@ -493,13 +493,6 @@ input.half-width {
   fill: #000000;
 }
 
-.arrival-date-calendar:focus,
-.departure-date-calendar:focus,
-.minus-button:focus,
-.plus-button:focus {
-  background-color: #f2f2f2;
-}
-
 .arrival-date-calendar:active path,
 .departure-date-calendar:active path,
 .minus-button:active,
