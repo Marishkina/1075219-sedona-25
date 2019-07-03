@@ -1,4 +1,3 @@
-
   var link = document.querySelector(".button");
   var popup = document.querySelector(".wrapper-search-form");
   var sendForm = popup.querySelector(".modal-search-form");
