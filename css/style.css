@@ -526,9 +526,7 @@ input.half-width {
   color: #000000;
 }
 
-.search-form input:hover,
-.arrival-date-calendar:hover,
-.departure-date-calendar:hover {
+.search-form input:hover {
   background-color: #ebebeb;
 }
 
