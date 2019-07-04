@@ -46,8 +46,8 @@ sendForm.addEventListener("submit", function (evt) {
     adult.classList.add("modal-error");
     children.classList.add("modal-error");
     console.log("заполните поля");
-} else {
-  if (isStorageSupport) {
+  } else {
+    if (isStorageSupport) {
     localStorage.setItem("adult", adult.value);
     localStorage.setItem("children", children.value);
     }
@@ -55,11 +55,11 @@ sendForm.addEventListener("submit", function (evt) {
 });
 
 window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      evt.preventDefault();
-      if (popup.classList.contains("modal-search-form-show")) {
-        popup.classList.remove("modal-search-form-show");
-        popup.classList.remove("modal-error");
-      }
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (popup.classList.contains("modal-search-form-show")) {
+    popup.classList.remove("modal-search-form-show");
+    popup.classList.remove("modal-error");
     }
-  });
+  }
+});
