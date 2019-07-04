@@ -60,18 +60,22 @@ img {
   margin-top: 16px;
   line-height: 26px;
   margin-bottom: 15px;
+  width: 150px;
 }
 
 .left-navigation-row {
-  margin-right: 148px;
+  margin-right: 92px;
+  text-align: left;
 }
 
 .right-navigation-row-map {
-  margin-left: 240px;
+  margin-left: 182px;
+  text-align: right;
 }
 
 .right-navigation-row-hotels {
   margin-left: auto;
+  text-align: right;
 }
 
 .site-navigation a {
@@ -86,7 +90,7 @@ img {
 }
 
 .site-navigation a:active {
-  color: #d1d1d1;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .intro {
@@ -321,7 +325,7 @@ img {
 }
 
 .button:active {
-  color: #928a85;
+  color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
 
@@ -502,6 +506,7 @@ input.half-width {
 
 .search-form input[placeholder] {
   font-size: 14px;
+  line-height: 26px;
   font-weight: 900;
   text-transform: uppercase;
 }
@@ -554,7 +559,7 @@ input.half-width {
 }
 
 .search-form button[type="submit"]:active {
-  color: #88b6d1;
+  color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
 
@@ -580,11 +585,12 @@ input.half-width {
 .footer-logo {
   height: 20px;
   margin-left: 132px;
-  margin-top: 49px;
+  margin-top: 48px;
   margin-right: 256px;
   margin-bottom: 30px;
   font-size: 21px;
   font-weight: 900;
+  line-height: 26px;
 }
 
 .footer-logo:hover,
@@ -593,7 +599,7 @@ input.half-width {
 }
 
 .footer-logo:active {
-  color: #cacaca;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .footer-social ul {
@@ -627,7 +633,7 @@ input.half-width {
 }
 
 .social-button:active path {
-  fill: #88b6d1;
+  fill: rgba(255, 255, 255, 0.3);
 }
 
 .footer-copyright {
@@ -639,6 +645,7 @@ input.half-width {
   margin-top: 13px;
   margin-left: auto;
   margin-right: 100px;
+  line-height: 26px;
 }
 
 .footer-copyright a {
@@ -804,26 +811,32 @@ input.half-width {
 }
 
 .price-controls label {
-  padding-top: 8px;
+  padding-top: 5px;
   display: inline-block;
   font-size: 14px;
-  line-height: 14px;
-  vertical-align: baseline;
-}
-
-.price-controls .min-price,
-.price-controls .max-price {
-  width: 90px;
-  padding-left: 61px;
+  line-height: 21px;
 }
 
 .price-controls input {
   width: 50px;
+  /* padding: 0; */
   margin: 0;
   color: inherit;
   font: inherit;
   background: none;
   border: none;
+  line-height: 21px;
+}
+
+.price-controls .min-price {
+  width: 90px;
+  min-height: 14px;
+  padding-left: 65px;
+}
+
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 57px;
 }
 
 .range-controls {
@@ -875,7 +888,7 @@ input.half-width {
   padding: 6px 34px;
   margin-right: 96px;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 21px;
   color: #ffffff;
   text-transform: uppercase;
 
@@ -936,7 +949,7 @@ input.half-width {
 }
 
 .sort-filter a {
-  color: #d1d1d1;
+  color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dotted #81b3d2;
 }
 
@@ -1022,10 +1035,11 @@ input.half-width {
 }
 
 .catalog-list h3 {
-  margin-top: 28px;
-  margin-bottom: 10px;
+  margin-top: 26px;
+  margin-bottom: 6px;
   font-size: 21px;
   font-weight: 700;
+  line-height: 26px;
   padding: 0;
 }
 
@@ -1035,7 +1049,7 @@ input.half-width {
 }
 
 .catalog h3:active {
-  color: #c6c6c6;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .catalog-description {
@@ -1052,7 +1066,7 @@ input.half-width {
 }
 
 .booking {
-  margin-top: 15px;
+  margin-top: 14px;
   display: flex;
 }
 
@@ -1069,7 +1083,7 @@ input.half-width {
 .booking-details {
   width: 110px;
   height: 27px;
-  margin-right: 6px;
+  margin-right: 5px;
   background-color: #81b3d2;
 }
 
@@ -1086,7 +1100,7 @@ a.booking-details:focus {
 }
 
 a.booking-details:active {
-  color: #88b6d1;
+  color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
 
@@ -1096,7 +1110,7 @@ a.book:focus {
 }
 
 a.book:active {
-  color: #928a85;
+  color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
 
